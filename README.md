@@ -2,11 +2,13 @@
 This simple script makes Google Sheets easier to read with a dark theme, clearer table headers, and bigger rows and columns. It’s an alternative to Google Sheets’ built-in Tables feature if you find it hard to use, dislike its small action buttons or prominent header, or want more control over header options.
 
 
-**Install**
+## **Install**
 
 1. Open your Google Sheet and choose **Extensions → Apps Script**.
 2. Replace the editor contents with the code from [`Code.gs`](Code.gs), then save.
 3. Reload the spreadsheet and approve the requested permissions the first time it runs.
+
+You no longer need to use Google Sheets’ built-in Tables feature. Just enter your data in the cells, then reload the sheet to apply the new table style, including its outline and background.
 
 The script runs on the active sheet whenever the spreadsheet opens. It formats the populated area and looks for tables with a filled header row and at least one following row containing data. Set `RESIZE_CELLS` to `false` near the top of the code to turn off automatic resizing.
 
